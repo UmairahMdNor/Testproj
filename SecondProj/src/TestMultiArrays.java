@@ -16,26 +16,39 @@ public class TestMultiArrays {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int salaries [] = {2222,100,50,60,170,80,1,5,10};
-		Arrays.sort(salaries);
-		//Arrays.binarySearch(salaries, 1);
-		System.out.println(Arrays.binarySearch(salaries, 1));
+		String course_subjects [][] = new String [2][2];
+		course_subjects [0][0] = "PHY-Quantum";
+		course_subjects [0][1] = "PHY-Solid State";
+		course_subjects [1][0] = "PHY-Modern Physics";
+		course_subjects [1][1] = "PHY-Non-destructive Testing";
+
+		String course_subjects2 [][] = {{"PHY-Quantum", "PHY-Solid State"}, {"PHY-Modern Physics", "PHY-Non-destructive Testing"}};  
 		
+		for(int i=0;i < course_subjects.length; i++) {
+			for(int j=0;j < course_subjects.length; j++) {
+				System.out.println("Course of " + i + " Subject of " + j + " is " + course_subjects[i][j]);
+			}
+
+		}
 		/*
 		for(int i=0;i < salaries.length;i++) {
 			System.out.println("Salary of "+i + " is " + salaries[i]);
 		}
 		*/
 		
-		int i=0;
-		for(int sal:salaries) {
-			System.out.println(sal + ",");
-			//i++;
-			
+		//int i=0;
+		
+		
+		for(String [] courses:course_subjects) {
+			for(String subject:courses) {
+			System.out.println("Subject " + subject);
+		
+		
 		}
 
 		
 
 	}
 
+}
 }
