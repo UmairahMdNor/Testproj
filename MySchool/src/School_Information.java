@@ -78,7 +78,7 @@ public class School_Information {
 				      while(rs.next()){
 				         //Retrieve by column name
 				         String name  = rs.getString("Name");
-				         int id = rs.getInt("I");
+				         int id = rs.getInt("ID");
 				         int age = rs.getInt("age");
 				         String gender  = rs.getString("Gender");
 				         String subject = rs.getString("Class");
